@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import Navbar from "./components/Navbar.js";
 import TextForm from "./components/TextForm.js";
 import Alert from "./components/Alert.js";
-import About from "./components/About.js";
+// import About from "./components/About.js";
 // import ImageCover from "./components/ImageCover.js";
 
 function App() {
@@ -43,15 +45,17 @@ function App() {
         />
         <Alert alert={alert} />
         <div className="container">
-          <Routes>
-            <Route path="/about" element={<About />} />
+          {/* <Routes> */}
+            {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/imageCover" element={<ImageCover />} /> */}
 
-            <Route
-              path="/"
-              element={<TextForm showAlert={showAlert} mode={mode} />}
-            />
-          </Routes>
+            {/* <Route */}
+              {/* path="/" */}
+             {<TextForm showAlert={showAlert} mode={mode} />}
+            {/* /> */}
+          {/* </Routes> */}
+          {/* element={<TextForm showAlert={showAlert} mode={mode} />} */}
+
         </div>
       </>
     </Router>
